@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="javascript" href="../data/friends.js"/>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="contanier">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Survery Questions</h3>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About You</h5>
+          <p>Name(Required)</p>
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="John Doe"
+            id="name"
+          />
+          <p>Link to Photo Image(Required)</p>
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="image url"
+            id="photo"
+          />
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <form action="">
+              <h5>Question 1</h5>
+              <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <h5>Question 2</h5>
+              <p>Generally speaking, you rely more on your experience than your imagination.</p>
+                  <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="question2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+              <h5>Question 3</h5>
+              <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+              <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="question3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+              <h5>Question 4</h5>
+              <p>You rarely do something just out of sheer curiosity.</p>
+              <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="question4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+              <h5>Question 5</h5>
+              <p>People can rarely upset you.</p>
+              <label for="exampleFormControlSelect1"></label>
+                  <select class="form-control" id="question5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+              <h5>Question 6</h5>
+              <p>It is often difficult for you to relate to other people’s feelings.</p>
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <h5>Question 7</h5>
+              <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>     
+              <h5>Question 8</h5>
+              <p>You rarely get carried away by fantasies and ideas.</p>
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select> 
+              <h5>Question 9</h5>
+              <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>         
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <h5>Question 10</h5>
+              <p>You feel more energetic after spending time with a group of people.</p>
+              <label for="exampleFormControlSelect1"></label>
+              <select class="form-control" id="question10">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <input id="submit" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script>
+      $("#submit").on("click", function(event){
+        event.preventDefault();
+        var userInput = {
+          name:$("#name").val().trim(),
+          photo:$("#photo").val().trim(),
+          scores:[
+            Number$("#question1").val().trim(),
+            Number$("#question2").val().trim(),
+            Number$("#question3").val().trim(),
+            Number$("#question4").val().trim(),
+            Number$("#question5").val().trim(),
+            Number$("#question6").val().trim(),
+            Number$("#question7").val().trim(),
+            Number$("#question8").val().trim(),
+            Number$("#question9").val().trim(),
+            Number$("#question10").val().trim()
+          ]
+        }
+        console.log(userInput);
+        axios.post("/api/friends", userInput)
+        .then(function(resp){
+          console.log(userInput)
+        })
+      })
+    </script>
+  </body>
+</html>
